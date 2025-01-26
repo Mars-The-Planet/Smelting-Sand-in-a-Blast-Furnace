@@ -15,7 +15,7 @@ public class CommonClass {
         DeimosConfig.init(MOD_ID, BlastingSandConfig.class);
 
         for (String sand : BlastingSandConfig.sand_list) {
-            DeimosRecipeGenerator.createBlastingJson(ResourceLocation.parse(sand), ResourceLocation.withDefaultNamespace("glass"), 100, 0.1F);
+            DeimosRecipeGenerator.createBlastingJson(new ResourceLocation(sand), new ResourceLocation("minecraft:glass"), 100, 0.1F);
         }
     }
 }

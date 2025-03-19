@@ -12,7 +12,5 @@ public class MixinMinecraft {
 
     @Inject(at = @At("TAIL"), method = "<init>")
     private void init(CallbackInfo info) {
-        Constants.LOG.info("This line is printed by the Smelting Sand in a Blast Furnace common mixin!");
-        Constants.LOG.info("MC Version: {}", Minecraft.getInstance().getVersionType());
     }
 }
